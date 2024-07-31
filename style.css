@@ -16,7 +16,7 @@ header, footer {
 
 header h1, footer p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2rem; /* Header font size */
 }
 
 nav ul {
@@ -104,6 +104,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    font-size: 0.9rem; /* Smaller footer font size */
 }
 
 /* Mobile Responsiveness */

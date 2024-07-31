@@ -19,6 +19,11 @@ header {
     width: 100px; /* Adjust the size as needed */
     margin-bottom: 20px;
 }
+/* Example for setting a fixed size for images */
+.fixed-size-img {
+    width: 300px; /* Fixed width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
 
 nav ul {
     list-style: none;

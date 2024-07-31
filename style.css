@@ -12,26 +12,20 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #e74c3c; /* You can change this color to match your logo */
+    border-bottom: 5px solid #e74c3c; /* Adjust color to match your logo */
 }
 
 .logo {
-    width: 100px; /* Adjust the size as needed */
+    width: 100px;
     margin-bottom: 20px;
 }
 
 /* Ensure images are responsive and fit within their container */
 img {
-    max-width: 100%; /* This makes the image responsive, adapting to the size of its container */
-    height: auto;    /* Maintains the aspect ratio */
-    display: block;  /* Ensures images are block-level elements */
-    margin: 10px auto; /* Centers images within their container */
-}
-
-/* Optional: Set a maximum width for images */
-.image-container img {
-    max-width: 300px; /* Set a specific max width as needed */
-    width: 100%; /* Ensures the image scales to fit within the container */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 nav ul {
@@ -40,10 +34,11 @@ nav ul {
     margin: 0;
     background-color: #444;
     overflow: hidden;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -56,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #e74c3c; /* Highlight color */
+    background-color: #e74c3c;
     border-radius: 5px;
 }
 
@@ -67,6 +62,7 @@ section {
     border-radius: 10px;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 footer {
@@ -77,4 +73,37 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        border-bottom: 4px solid #e74c3c;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 15px;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+        position: static; /* Make footer static for better mobile experience */
+    }
 }

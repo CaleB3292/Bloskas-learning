@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 150px; /* Base size for logo */
+    width: 120px; /* Base size for logo */
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -86,7 +86,7 @@ footer {
     }
 
     .logo {
-        width: 120px;
+        width: 80px;
         margin-bottom: 15px;
     }
 
@@ -120,17 +120,17 @@ footer {
 /* Medium Screen Adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
     .logo {
-        max-width: 120px; /* Adjust the max size for medium screens */
+        max-width: 100px; /* Further restrict the max size for medium screens */
     }
 
     img {
-        max-width: 80%; /* Restrict images to 80% width for medium screens */
+        max-width: 70%; /* Restrict images to 70% width for medium screens */
     }
 
     section {
         margin: 20px auto;
         padding: 20px;
-        max-width: 700px; /* Adjust section width for medium screens */
+        max-width: 600px; /* Adjust section width for medium screens */
     }
 
     nav ul li a {
@@ -141,10 +141,10 @@ footer {
 /* Larger Screen Adjustments */
 @media (min-width: 1025px) {
     .logo {
-        max-width: 150px; /* Ensure the logo doesn't exceed a reasonable size */
+        max-width: 120px; /* Ensure the logo doesn't exceed a reasonable size */
     }
 
     img {
-        max-width: 70%; /* Limit the maximum width of images on larger screens */
+        max-width: 60%; /* Limit the maximum width of images on larger screens */
     }
 }

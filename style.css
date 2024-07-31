@@ -19,6 +19,7 @@ header {
     width: 120px; /* Base size for logo */
     max-width: 100%;
     height: auto;
+    display: block;
     margin-bottom: 20px;
 }
 

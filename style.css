@@ -16,11 +16,11 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 100px; /* Adjust the size as needed */
     margin-bottom: 20px;
 }
 
-/* Ensure images are responsive and fit within their container */
+/* General Styles for Images */
 img {
     max-width: 100%;
     height: auto;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #e74c3c;
+    background-color: #e74c3c; /* Highlight color */
     border-radius: 5px;
 }
 
@@ -105,5 +105,12 @@ footer {
     footer {
         padding: 15px;
         position: static; /* Make footer static for better mobile experience */
+    }
+
+    /* Specific styles for images on smaller screens */
+    img {
+        max-width: 90%; /* Ensure images do not exceed 90% of the screen width */
+        height: auto;
+        margin: 10px auto;
     }
 }

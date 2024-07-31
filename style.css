@@ -78,12 +78,14 @@ button, .btn {
 button:hover, .btn:hover {
     background-color: #c0392b;
 }
+
 .logo {
-    width: 140px; /* Base size for logo */
-    max-width: 100%;
+    width: auto;
+    max-width: 140px; /* Base size for logo */
     height: auto;
     display: block;
     margin-bottom: 20px;
+    margin: 0 auto; /* Center the logo */
 }
 
 /* General Styles for Images */
@@ -92,43 +94,6 @@ img {
     height: auto;
     display: block;
     margin: 10px auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #444;
-    overflow: hidden;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #e74c3c; /* Highlight color */
-    border-radius: 5px;
-}
-
-section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
 }
 
 footer {
@@ -150,7 +115,7 @@ footer {
     }
 
     .logo {
-        width: 100px;
+        max-width: 100px; /* Smaller size for mobile screens */
         margin-bottom: 15px;
     }
 
@@ -173,7 +138,6 @@ footer {
         position: static; /* Make footer static for better mobile experience */
     }
 
-    /* Specific styles for images on smaller screens */
     img {
         max-width: 90%; /* Ensure images do not exceed 90% of the screen width */
         height: auto;
@@ -188,7 +152,7 @@ footer {
     }
 
     img {
-        max-width: 75%; /* Restrict images to 70% width for medium screens */
+        max-width: 75%; /* Restrict images to 75% width for medium screens */
     }
 
     section {

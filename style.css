@@ -14,9 +14,9 @@ header, footer {
     text-align: center;
 }
 
-header h1, footer p {
+header h1 {
     margin: 0;
-    font-size: 2rem; /* Header font size */
+    font-size: 2rem;
 }
 
 nav ul {
@@ -80,7 +80,7 @@ button:hover, .btn:hover {
 }
 
 .logo {
-    max-width: 200px; /* Base size for logo */
+    max-width: 140px; /* Base size for logo */
     height: auto;
     display: block;
     margin-bottom: 20px;
@@ -104,7 +104,8 @@ footer {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    font-size: 0.9rem; /* Smaller footer font size */
+    font-size: 0.8rem; /* Smaller footer font size */
+    line-height: 1.2;  /* Adjust line height for better text spacing */
 }
 
 /* Mobile Responsiveness */
@@ -115,7 +116,7 @@ footer {
     }
 
     .logo {
-        max-width: 150px; /* Smaller size for mobile screens */
+        max-width: 100px; /* Smaller size for mobile screens */
         margin-bottom: 15px;
     }
 
@@ -136,6 +137,7 @@ footer {
     footer {
         padding: 15px;
         position: static; /* Make footer static for better mobile experience */
+        font-size: 0.8rem; /* Ensure consistent font size on mobile */
     }
 
     img {
@@ -148,7 +150,7 @@ footer {
 /* Medium Screen Adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
     .logo {
-        max-width: 160px; /* Further restrict the max size for medium screens */
+        max-width: 100px; /* Further restrict the max size for medium screens */
     }
 
     img {
@@ -162,17 +164,4 @@ footer {
     }
 
     nav ul li a {
-        padding: 8px 15px; /* Adjust padding for medium screens */
-    }
-}
-
-/* Larger Screen Adjustments */
-@media (min-width: 1025px) {
-    .logo {
-        max-width: 200px; /* Ensure the logo doesn't exceed a reasonable size */
-    }
-
-    img {
-        max-width: 70%; /* Limit the maximum width of images on larger screens */
-    }
-}
+        padding: 8px​⬤

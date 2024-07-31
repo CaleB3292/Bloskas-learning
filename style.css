@@ -16,7 +16,9 @@ header {
 }
 
 .logo {
-    width: 100px; /* Adjust the size as needed */
+    width: 150px; /* Set a reasonable size for larger screens */
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -112,5 +114,16 @@ footer {
         max-width: 90%; /* Ensure images do not exceed 90% of the screen width */
         height: auto;
         margin: 10px auto;
+    }
+}
+
+/* Larger Screen Adjustments */
+@media (min-width: 769px) {
+    .logo {
+        max-width: 150px; /* Ensure the logo doesn't exceed a reasonable size */
+    }
+
+    img {
+        max-width: 80%; /* Limit the maximum width of images on larger screens */
     }
 }

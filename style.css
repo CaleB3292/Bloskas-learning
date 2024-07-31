@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 120px; /* Base size for logo */
+    width: 140px; /* Base size for logo */
     max-width: 100%;
     height: auto;
     display: block;
@@ -87,7 +87,7 @@ footer {
     }
 
     .logo {
-        width: 80px;
+        width: 100px;
         margin-bottom: 15px;
     }
 
@@ -125,7 +125,7 @@ footer {
     }
 
     img {
-        max-width: 70%; /* Restrict images to 70% width for medium screens */
+        max-width: 75%; /* Restrict images to 70% width for medium screens */
     }
 
     section {
@@ -146,6 +146,6 @@ footer {
     }
 
     img {
-        max-width: 60%; /* Limit the maximum width of images on larger screens */
+        max-width: 70%; /* Limit the maximum width of images on larger screens */
     }
 }

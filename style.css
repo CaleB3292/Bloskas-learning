@@ -82,43 +82,29 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Hamburger Menu */
 nav .hamburger {
-    display: none;
+    display: none; /* Hide by default for larger screens */
     cursor: pointer;
-    color: var(--white);
+    color: var(--white); /* Default white for visibility */
     font-size: 1.5rem;
     background: none;
-    border: none;
-    padding: 10px 15px;
+    border: 2px solid var(--white); /* Add a border for better visibility */
+    border-radius: 5px; /* Rounded corners for a cleaner look */
+    padding: 10px;
     position: absolute;
     top: 10px;
     right: 20px;
     z-index: 1001;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .hamburger:hover {
+    background-color: var(--primary-color); /* Highlight background on hover */
+    color: var(--white); /* Ensure the icon is still visible */
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide menu initially */
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background: var(--secondary-color);
-        width: 100%;
-        z-index: 1000;
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: flex; /* Show menu when toggled */
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
     nav .hamburger {
-        display: block; /* Show hamburger icon */
+        display: block; /* Show hamburger icon on smaller screens */
     }
 }
 

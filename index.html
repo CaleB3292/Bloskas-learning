@@ -26,6 +26,10 @@
 
     <!-- Navigation -->
     <nav>
+        <!-- Hamburger Icon for Mobile -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation Menu -->
         <ul>
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -55,17 +59,17 @@
     <section id="gallery" class="animate">
         <h2>Gallery</h2>
         <p>Check out photos from our recent events and activities.</p>
-
+        
         <figure>
             <img src="IMG_7750.jpeg" alt="Noah presenting his presentation on the importance of snacks">
             <figcaption>Noah presenting his engaging talk on the importance of snacks.</figcaption>
         </figure>
-
+        
         <figure>
             <img src="IMG_7680.jpeg" alt="Annual Safari & interactions with the animals">
             <figcaption>Memorable moments from our Annual Safari, including interactions with the animals.</figcaption>
         </figure>
-
+        
         <figure>
             <img src="IMG_7571.jpeg" alt="Exploring our school-provided transportation">
             <figcaption>Students exploring our school-provided transportation for field trips.</figcaption>
@@ -111,6 +115,12 @@
                 }
             });
         });
+
+        // Toggle Mobile Navigation Menu
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('show');
+        }
     </script>
 </body>
 </html>

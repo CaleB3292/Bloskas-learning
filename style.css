@@ -84,9 +84,9 @@ nav ul li a:hover, nav ul li a.active {
 nav .hamburger {
     display: none;
     cursor: pointer;
-    color: var(--primary-color); /* Changed from white to red */
+    color: var(--primary-color);
     font-size: 1.5rem;
-    border: 2px solid var(--primary-color); /* Red border */
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
     padding: 10px;
     position: absolute;
@@ -96,7 +96,7 @@ nav .hamburger {
 }
 
 nav .hamburger:hover {
-    background-color: var(--primary-color); /* Highlight background on hover */
+    background-color: var(--primary-color);
     color: var(--white);
 }
 
@@ -148,7 +148,68 @@ section p {
     line-height: 1.6;
 }
 
-/* Pop-up */
+/* General Styles for Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gallery Styling */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    figcaption {
+        font-size: 0.8rem;
+    }
+}
+
+/* Pop-up Styling */
 .popup {
     display: none;
     position: fixed;
@@ -173,70 +234,23 @@ section p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Close Button Styling */
 .close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 20px;
-    
-    /* General Styles for Images */
-img {
-    max-width: 100%; /* Prevents images from exceeding the width of their container */
-    height: auto; /* Maintains aspect ratio */
-    display: block;
-    margin: 0 auto;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px;
+    background: var(--white);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Gallery Styling */
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 20px;
-}
-
-figure {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-figure img {
-    width: 100%; /* Ensures images fill the width of their container */
-    transition: transform 0.3s ease;
-}
-
-figure:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+.close-btn:hover {
+    background-color: var(--primary-color);
     color: var(--white);
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
-
-figure:hover figcaption {
-    opacity: 1;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    #gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns for mobile */
-        gap: 10px;
-    }
-
-    figcaption {
-        font-size: 0.8rem; /* Smaller captions for mobile */
-    }
-}
-   

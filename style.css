@@ -27,7 +27,12 @@ nav ul {
     background-color: #444;
     margin: 0;
 }
-
+figcaption {
+    margin-top: 10px;
+    font-size: clamp(0.7rem, 1vw, 0.9rem); /* Dynamically scales between 0.7rem and 0.9rem */
+    color: #555;
+    font-style: italic;
+}
 nav ul li {
     margin: 0 15px;
 }

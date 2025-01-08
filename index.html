@@ -6,86 +6,76 @@
     <title>Bloskas Learning Institute</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="apple-touch-icon.png" type="image/x-icon">
-    <script>
-    // Your JavaScript code
-    window.onload = function () {
-        setTimeout(showPopup, 1000); // Show popup after 1 second
-    };
-
-    function showPopup() {
-        document.getElementById("popup").style.display = "block";
-    }
-
-    function closePopup() {
-        document.getElementById("popup").style.display = "none";
-    }
-</script>
 </head>
 <body>
     <header>
-        <img src="GMP_U2F2ZUdNQVgwMQ==.gif" alt="Bloskas Learning Institute Logo" class="logo">
+        <img src="logo.png" alt="Bloskas Learning Institute Logo" class="logo">
         <h1>Bloskas Learning Institute</h1>
+        <p>Empowering minds, one student at a time</p>
     </header>
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <h2>Winter Weather Advisory</h2>
-        <p>--Winter weather is expected Jan. 8-10-- 
-            Please keep an eye on emails and text about any weather delays or cancellations.</p>
-    </div>
-</div>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="home">
+    <section id="home" class="animate">
         <h2>Home</h2>
         <p>Welcome to the Bloskas Learning Institute!</p>
     </section>
-    <section id="about">
+    <section id="about" class="animate">
         <h2>About Us</h2>
-        <p>The Bloskas Learning Institute, established in 2024 to address a specific learning gap for a intelligent group of students, provides a highly personalized education tailored to each student’s unique needs. With a 3:1 student-to-teacher ratio, we occasionally offer ad-hoc lessons to non-enrolled children, but we are currently not accepting new students. </p>
+        <p>The Bloskas Learning Institute, established in 2024, provides a highly personalized education tailored to each student’s unique needs. With a 3:1 student-to-teacher ratio, we are committed to academic excellence.</p>
     </section>
-    <section id="events">
+    <section id="events" class="animate">
         <h2>Events</h2>
-        <p>Upcoming events and activities at Bloskas Learning Institute.</p>
         <ul>
             <li>1st Day of Spring Semester - Jan. 6, 2025</li>
             <li>Texas History Tour - April 2025</li>
             <li>Sea World Field Trip - May 2025</li>
         </ul>
-<section id="gallery">
-    <h2>Gallery</h2>
-    <p>Check out photos from our recent events and activities.</p>
-
-    <figure>
-        <img src="IMG_7750.jpeg" alt="Noah presenting his presentation on the importance of snacks">
-        <figcaption>Noah presenting his engaging talk on the importance of snacks.</figcaption>
-    </figure>
-
-    <figure>
-        <img src="IMG_7680.jpeg" alt="Annual Safari & interactions with the animals">
-        <figcaption>Memorable moments from our Annual Safari, including interactions with the animals.</figcaption>
-    </figure>
-
-    <figure>
-        <img src="IMG_7571.jpeg" alt="Exploring our school provided transportation">
-        <figcaption>Students exploring our school-provided transportation for field trips.</figcaption>
-    </figure>
-</section>
-    <section id="contact">
+    </section>
+    <section id="gallery" class="animate">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="IMG_5405.jpeg" alt="Students performing at the Moonlight Musical event">
+            <figcaption>Students performing at the Moonlight Musical event.</figcaption>
+        </figure>
+        <figure>
+            <img src="IMG_5256.jpeg" alt="Noah demonstrating his baking skills">
+            <figcaption>Noah demonstrating his baking skills.</figcaption>
+        </figure>
+        <figure>
+            <img src="IMG_5055.jpeg" alt="Students playing baseball during recess">
+            <figcaption>Students playing baseball during recess.</figcaption>
+        </figure>
+    </section>
+    <section id="contact" class="animate">
         <h2>Contact Us</h2>
-        <p>Get in touch with us for more information or inquiries.</p>
+        <p>Get in touch for more information.</p>
         <p>Email: info@bloskasinstitute.org</p>
     </section>
     <footer>
         <p>&copy; 2024 Bloskas Learning Institute. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+    <script>
+        // JavaScript for Animations
+        document.addEventListener('scroll', () => {
+            document.querySelectorAll('.animate').forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                if (position < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

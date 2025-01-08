@@ -84,7 +84,7 @@ nav ul li a:hover, nav ul li a.active {
 nav .hamburger {
     display: none; /* Hide by default for larger screens */
     cursor: pointer;
-    color: var(--white); /* Default white for visibility */
+    color: var(--secondary-color); /* Default white for visibility */
     font-size: 1.5rem;
     background: none;
     border: 2px solid var(--white); /* Add a border for better visibility */

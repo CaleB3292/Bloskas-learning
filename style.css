@@ -82,30 +82,70 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Hamburger Menu */
 nav .hamburger {
-    display: none; /* Hide by default for larger screens */
+    display: none;
     cursor: pointer;
-    color: var(--secondary-color); /* Default white for visibility */
+    color: var(--primary-color); /* Changed from white to red */
     font-size: 1.5rem;
-    background: none;
-    border: 2px solid var(--white); /* Add a border for better visibility */
-    border-radius: 5px; /* Rounded corners for a cleaner look */
+    border: 2px solid var(--primary-color); /* Red border */
+    border-radius: 5px;
     padding: 10px;
     position: absolute;
     top: 10px;
     right: 20px;
     z-index: 1001;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav .hamburger:hover {
     background-color: var(--primary-color); /* Highlight background on hover */
-    color: var(--white); /* Ensure the icon is still visible */
+    color: var(--white);
 }
 
 @media (max-width: 768px) {
-    nav .hamburger {
-        display: block; /* Show hamburger icon on smaller screens */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: var(--secondary-color);
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
     }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Pop-up */
@@ -138,12 +178,4 @@ nav .hamburger:hover {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    font-weight: bold;
-    color: var(--primary-color);
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.close-btn:hover {
-    color: #c0392b;
-}
+   

@@ -159,9 +159,25 @@ img {
 /* Gallery Styling */
 #gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default grid for larger screens */
     gap: 20px;
     padding: 20px;
+    justify-items: center; /* Center-align grid items */
+    text-align: center; /* Center title and description */
+}
+
+#gallery h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center; /* Centers the title */
+}
+
+#gallery p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center; /* Centers the description */
 }
 
 figure {
@@ -169,15 +185,18 @@ figure {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures figures stretch within the grid cell */
+    max-width: 300px; /* Sets a maximum width for images */
 }
 
 figure img {
     width: 100%;
+    height: auto; /* Maintains the aspect ratio */
     transition: transform 0.3s ease;
 }
 
 figure:hover img {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 figcaption {
@@ -197,15 +216,19 @@ figure:hover figcaption {
     opacity: 1;
 }
 
-/* Mobile Adjustments */
+/* Mobile Adjustments: Stacked Layout */
 @media (max-width: 768px) {
     #gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
+        grid-template-columns: 1fr; /* Stacks photos vertically */
+        gap: 20px; /* Maintain spacing between stacked photos */
+    }
+
+    figure {
+        max-width: 100%; /* Full width on smaller screens */
     }
 
     figcaption {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Smaller captions for better fit */
     }
 }
 

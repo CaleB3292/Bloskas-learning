@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloskas Learning Institute</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloskas Learning Institute</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    <!-- Pop-up need to remove exclaimation mark and brackets to turn on-->
-   
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>Spring Break 2025</h2>
-            <p>Spring Break is March 17-21,2025. Classes will resume March 24th at 8am</p>
-        </div>
+  <!-- Pop-up Notice -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Fall 2025 Update</h2>
+      <p>Our Fall 2025 curriculum and school calendar are currently being finalized. Details will be published here once available.</p>
     </div>
+  </div>
 
-    
-    <!-- Header -->
-    <header>
-        <img src="GMP_U2F2ZUdNQVgwMQ==.gif" alt="Bloskas Learning Institute Logo" class="logo">
-        <h1>Bloskas Learning Institute</h1>
-        <p>Empowering minds, one student at a time</p>
-    </header>
+  <!-- Header -->
+  <header>
+    <img src="GMP_U2F2ZUdNQVgwMQ==.gif" alt="Bloskas Learning Institute Logo" class="logo" />
+    <h1>Bloskas Learning Institute</h1>
+    <p>Empowering minds, one student at a time</p>
+  </header>
 
-    <!-- Navigation -->
-    <nav>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Sections -->
+  <!-- Main Content -->
+  <main>
     <section id="home" class="animate">
-        <h2>Home</h2>
-        <p>Welcome to the Bloskas Learning Institute!</p>
+      <h2>Welcome</h2>
+      <p>Welcome to the Bloskas Learning Institute, where learning comes to life in a supportive and personalized environment.</p>
     </section>
+
     <section id="about" class="animate">
-        <h2>About Us</h2>
-        <p>The Bloskas Learning Institute, established in 2024, provides a highly personalized education tailored to each student’s unique needs. With a 3:1 student-to-teacher ratio, we are committed to academic excellence.</p>
+      <h2>About Us</h2>
+      <p>Founded in 2024, the Bloskas Learning Institute offers a tailored homeschool experience with a 3:1 student-teacher ratio and a focus on excellence, curiosity, and joy in learning.</p>
     </section>
+
     <section id="events" class="animate">
-        <h2>Events</h2>
-        <ul>
-            <li> Spring Break - March 17-21,2025</li>
-            <li>Texas History Tour - April 2025</li>
-            <li>Sea World Field Trip - May 2025</li>
-        </ul>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Texas History Tour:</strong> April 2025</li>
+        <li><strong>SeaWorld Field Trip:</strong> May 2025</li>
+      </ul>
     </section>
+
     <section id="gallery" class="animate">
-        <h2>Gallery</h2>
-        <p>Check out photos from our recent events and activities.</p>
-        <figure>
-            <img src="IMG_7750.jpeg" alt="Noah presenting his presentation on the importance of snacks">
-            <figcaption>Noah presenting his engaging talk on the importance of snacks.</figcaption>
-        </figure>
-        <figure>
-            <img src="IMG_7680.jpeg" alt="Annual Safari & interactions with the animals">
-            <figcaption>Memorable moments from our Annual Safari, including interactions with the animals.</figcaption>
-        </figure>
-        <figure>
-            <img src="IMG_7571.jpeg" alt="Exploring our school-provided transportation">
-            <figcaption>Students exploring our school-provided transportation for field trips.</figcaption>
-        </figure>
+      <h2>Gallery</h2>
+      <p>Peek into our recent adventures and learning moments.</p>
+
+      <figure>
+        <img src="IMG_7750.jpeg" alt="Noah presenting his presentation on the importance of snacks" />
+        <figcaption>Noah presenting his talk on the importance of snacks.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_7680.jpeg" alt="Annual Safari & interactions with animals" />
+        <figcaption>Exploring the wild at our Annual Safari!</figcaption>
+      </figure>
+
+      <figure>
+        <img src="IMG_7571.jpeg" alt="Students with school transportation" />
+        <figcaption>Checking out our school-provided field trip bus.</figcaption>
+      </figure>
     </section>
+
     <section id="contact" class="animate">
-        <h2>Contact Us</h2>
-        <p>Get in touch for more information.</p>
-        <p>Email: info@bloskasinstitute.org</p>
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you!</p>
+      <p><strong>Email:</strong> <a href="mailto:info@bloskasinstitute.org">info@bloskasinstitute.org</a></p>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Bloskas Learning Institute -- All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bloskas Learning Institute — All rights reserved.</p>
+  </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Pop-up Functionality
-        window.onload = function () {
-            setTimeout(showPopup, 1000); // Show popup after 1 second
-        };
+  <!-- JavaScript -->
+  <script>
+    // Pop-up Functionality
+    window.onload = function () {
+      setTimeout(showPopup, 1000);
+    };
 
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    // Scroll Animations
+    document.addEventListener('scroll', () => {
+      document.querySelectorAll('.animate').forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < window.innerHeight) {
+          el.classList.add('visible');
         }
+      });
+    });
 
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-
-        // Scroll Animations
-        document.addEventListener('scroll', () => {
-            document.querySelectorAll('.animate').forEach(el => {
-                const position = el.getBoundingClientRect().top;
-                if (position < window.innerHeight) {
-                    el.classList.add('visible');
-                }
-            });
-        });
-
-        // Toggle Mobile Navigation Menu
-        function toggleMenu() {
-            const navMenu = document.querySelector('nav ul');
-            navMenu.classList.toggle('show');
-        }
-    </script>
+    // Toggle Mobile Navigation
+    function toggleMenu() {
+      const navMenu = document.querySelector('nav ul');
+      navMenu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

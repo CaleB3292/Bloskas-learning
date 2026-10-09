@@ -348,6 +348,9 @@ h2 { font-size: clamp(2.1rem, 4vw, 3.1rem); margin-bottom: 16px; }
   #site-nav a.nav-cta { margin: 6px 0 0; text-align: center; }
 
   .announce { font-size: 0.85rem; padding: 10px 46px; }
+  /* phones: stack the name on two lines so the full name fits */
+  .brand span { display: flex; flex-direction: column; font-size: 1.05rem; line-height: 1.1; }
+  .brand em { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em; }
   .section { padding: 72px 0; }
   .dept-grid { grid-template-columns: 1fr; }
   .contact-card { padding: 40px 28px; }
@@ -355,7 +358,6 @@ h2 { font-size: clamp(2.1rem, 4vw, 3.1rem); margin-bottom: 16px; }
 }
 
 @media (max-width: 420px) {
-  .brand em { display: none; }
   .facts li { padding: 18px; }
   .facts strong { font-size: 1.8rem; }
   .event { grid-template-columns: 68px 1fr; gap: 16px; }
